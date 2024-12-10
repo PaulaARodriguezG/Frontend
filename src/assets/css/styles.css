@@ -1,16 +1,121 @@
+/* Configuración global */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f5f7fa; 
+    color: #2d3748; 
   }
   
-  header, footer {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 20px;
+  /* Barra de Navegación */
+  nav {
+    background-color: #0077cc; 
+    color: #ffffff;
+    padding: 16px;
   }
   
-  main {
-    padding: 20px;
+  nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav button {
+    background-color: #005fa3; 
+    color: #ffffff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  nav button:hover {
+    background-color: #007acc; 
+  }
+  
+  /* Sección principal */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  section h1 {
+    color: #1a202c; 
+    border-bottom: 2px solid #e2e8f0; 
+    padding-bottom: 8px;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 16px;
+  }
+  
+  .grid-cols-1 {
+    grid-template-columns: 1fr;
+  }
+  
+  @media (min-width: 640px) {
+    .sm\:grid-cols-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .md\:grid-cols-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Tarjetas */
+  div.bg-white {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 16px;
+  }
+  
+  div.bg-white img {
+    border-radius: 4px;
+  }
+  
+  div.bg-white button {
+    background-color: #0077cc; 
+    color: #ffffff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  div.bg-white button:hover {
+    background-color: #005fa3; 
+  }
+  
+  /* Botones */
+  button.bg-red-500 {
+    background-color: #d8e3ec; 
+  }
+  
+  button.bg-red-500:hover {
+    background-color: #2f8b8b; 
+  }
+  
+  button.bg-yellow-500 {
+    background-color: #d8e3ec; 
+  }
+  
+  button.bg-yellow-500:hover {
+    background-color: #2f8b8b; 
+  }
+  
+  /* Pie de página */
+  footer {
+    background-color: #005fa3; 
+    color: #ffffff;
+    text-align: center;
+    padding: 16px 0;
+    margin-top: 16px;
   }

@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../src/assets/css/styles.css">
 </head>
-<body>
-    
-</body>
+  <body class="bg-zinc-100 text-zinc-900">
+    <nav class="bg-blue-500 text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <span class="text-xl font-bold">Sistema de reserva de salas</span>
+        <button class="bg-blue-700 hover:bg-blue-600 text-white px-4 py-2 rounded-lg">Acceso</button>
+      </div>
+    </nav>
+
+    <div class="container mx-auto py-8">
+      <section id="home" class="mb-8">
+        <h1 class="text-2xl font-bold mb-4">Sala de reuniones disponible</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div class="bg-white shadow-md rounded-lg p-4">
+            <img src="https://placehold.co/300x200" alt="Meeting Room" class="w-full h-48 object-cover mb-4" />
+            <h2 class="text-lg font-semibold">Sala de reuniones 1</h2>
+            <p>Capacidad: 10</p>
+            <p>Estado: Disponible</p>
+            <p>Ubicacion: Sala A</p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-lg mt-4">Reservar Sala</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="reservations" class="mb-8">
+        <h1 class="text-2xl font-bold mb-4">Sus reservas</h1>
+        <ul>
+          <li>
+            <p>ID de reserva: 123</p>
+            <p>Sala: Reunion Sala 1</p>
+            <p>Fecha: 2022-10-15</p>
+            <p>Hora: 10:00 AM - 12:00 PM</p>
+            <p>Estado: Activo</p>
+            <button class="bg-red-500 text-white px-4 py-2 rounded-lg mt-2">Cancelar Reservacion</button>
+          </li>
+        </ul>
+      </section>
+
+      <section id="room-management">
+        <h1 class="text-2xl font-bold mb-4">Administrar Sala de Reunion</h1>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Add Sala</button>
+        <div class="mt-4">
+          <ul>
+            <li>
+              <p>ID Sala: 1</p>
+              <p>Nombre:Reunion Sala 1</p>
+              <p>Capacidad: 10</p>
+              <p>Estado: Disponible</p>
+              <p>Ubicacion: Sala A</p>
+              <button class="bg-yellow-500 text-white px-4 py-2 rounded-lg mt-2">Editar</button>
+              <button class="bg-red-500 text-white px-4 py-2 rounded-lg mt-2">Eliminar</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <footer class="bg-blue-500 text-white text-center py-4">
+      <p>&copy; 2022 Sistema de Reservacion de Salas. Todos los derechos reservados.</p>
+    </footer>
+  </body>
 </html>
