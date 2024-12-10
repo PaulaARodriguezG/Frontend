@@ -1,0 +1,11 @@
+.btn {
+  @apply inline-block px-4 py-2 rounded-lg text-white transition-all;
+}
+
+.btn-primary {
+  @apply bg-blue-500 hover:bg-blue-600;
+}
+
+.btn-secondary {
+  @apply bg-gray-500 hover:bg-gray-600;
+}

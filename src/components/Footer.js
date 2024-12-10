@@ -1,11 +1,12 @@
 import React from 'react';
 
-function Footer(){
-    return(
-        <footer className='footer'>
-            <p>&copy; 2024 Gestion de reservas. Todos los derechos reservados</p>
-        </footer>
-    );
-}
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+  return (
+    <footer className="bg-blue-500 text-white text-center p-4">
+      <p>&copy; {currentYear} Sistema de Reservación de Salas. Todos los derechos reservados.</p>
+    </footer>
+  );
+};
 
 export default Footer;

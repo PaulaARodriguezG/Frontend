@@ -1,0 +1,11 @@
+.tabla {
+  @apply w-full border-collapse;
+}
+
+.tabla th {
+  @apply bg-gray-100 text-left px-4 py-2 border-b;
+}
+
+.tabla td {
+  @apply px-4 py-2 border-b;
+}
