@@ -1,14 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';  // Asegúrate de importar 'react-dom/client'
 import App from './App';
-import './assets/css/styles.css';
-import {BrowserRouter as Router} from 'react-router-dom';
+import './assets/css/tailwind.css';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));  // Crear la raíz de la aplicación
+
+root.render(
     <React.StrictMode>
         <Router>
-            <App/>
+            <App />
         </Router>
     </React.StrictMode>
-    document.getElementById('root')
 );
