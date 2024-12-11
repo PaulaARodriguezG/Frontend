@@ -10,10 +10,5 @@ export default defineConfig({
   },
   base: '/',
   plugins: [react()],
-  esbuild:{
-    loader:{
-      '.js':'jsx'
-    }
-  }
  
 })
