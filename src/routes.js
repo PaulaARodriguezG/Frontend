@@ -12,6 +12,7 @@ const AppRoutes = () => {
       <Route path="/salas" element={<Salas />} />
       <Route path="/reservas" element={<Reservas />} />
       <Route path="/perfil" element={<Perfil />} />
+      <Route path="*" element={<h1>Página no encontrada</h1>} />
     </Routes>
   );
 };
