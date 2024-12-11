@@ -10,7 +10,7 @@ const SalasDisponibles = ({ salas }) => (
       {salas.map((sala) => (
         <div className="card p-4 bg-white shadow-md rounded-lg" key={sala.id}>
           <img
-            src="https://placehold.co/300x200"
+            src="./css/images/Salas.webp"
             alt={sala.nombre}
             className="w-full h-48 object-cover mb-4 rounded-lg"
           />
